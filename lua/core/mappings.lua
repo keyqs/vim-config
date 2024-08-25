@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- prettier
+vim.api.nvim_set_keymap('n', '<F5>', ':lua vim.lsp.buf.format({ async = true })<CR>', { noremap = true, silent = true })
+
 -- NeoTree
 vim.keymap.set('n', '<leader>E', ':Neotree float reveal<CR>')
 vim.keymap.set('n', '<leader>e', ':Neotree left reveal<CR>')

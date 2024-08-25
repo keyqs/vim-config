@@ -9,7 +9,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-
+    {'embark-theme/vim'},
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.8',
